@@ -10,8 +10,9 @@
 <body>  
     <header>
         <nav>
-            <a href="">Lien</a>
-            <a href="">Lien</a>
+            <a href="patisseries.php">Patisseries</a>
+            <a href="vienoiseries.php">Viennoiseries</a>
+            <a href="boissons.php">Boissons</a>
         </nav>
     </header>
 </body>
