@@ -2,10 +2,9 @@
 
 // Initialisation de curl 
 $curl = curl_init();
-// curl_setopt ($ch, CURLOPT_PORT , 8089)
 
 // URL à cibler
-curl_setopt($curl, CURLOPT_URL, 'https://api.airtable.com/v0/appmgDxFwxrmnNUAt/Categories?maxRecords=3&view=Grid%20view');
+curl_setopt($curl, CURLOPT_URL, 'https://api.airtable.com/v0/appHPGSjJLGYA9Di1/Produits?Records&view=Grid%20view');
 
 // Création du Bearer 
 $auth = 'Authorization: Bearer key1nLuwu3ULNJGnA';
@@ -26,11 +25,6 @@ $result = json_decode($result);
 
 // Boucle pour récupérer une donnée ciblée
 foreach($result->records as $record){
-    echo '<p>'. $record->fields->Name.'</p>';
+    echo '<p>Nom: '. $record->fields->Name." Prix : ".$record->fields->Prix.' €</p>';
 };
-
-// Inclus une balise pre pour formater le visuel
-echo '<pre>';
-var_dump($result);
-echo '</pre>';
 ?>

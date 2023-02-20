@@ -1,12 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+<?php 
+    require 'header.php';
+?>
     
-</body>
-</html>
+<div id="AllItems">
+    <div class="allProducts">
+        <h2>Nos produits</h2>
+        <div class="products">
+            <?php
+                require 'index2.php'
+            ?>
+        </div>
+    </div>
+    <h2>Nos Menus</h2>
+</div>
