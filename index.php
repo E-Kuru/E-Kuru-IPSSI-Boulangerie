@@ -7,7 +7,7 @@
         <h2>Nos produits</h2>
         <div class="products">
             <?php
-                require 'index2.php'
+                require 'api-produits.php'
             ?>
         </div>
     </div>
