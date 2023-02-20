@@ -1,0 +1,36 @@
+<?php
+
+// Initialisation de curl 
+$curl = curl_init();
+// curl_setopt ($ch, CURLOPT_PORT , 8089)
+
+// URL à cibler
+curl_setopt($curl, CURLOPT_URL, 'https://api.airtable.com/v0/appmgDxFwxrmnNUAt/Categories?maxRecords=3&view=Grid%20view');
+
+// Création du Bearer 
+$auth = 'Authorization: Bearer key1nLuwu3ULNJGnA';
+
+curl_setopt($curl, CURLOPT_HTTPHEADER, ['Content-Type : application/json', $auth]);
+
+// Evite d'afficher les données dans la page 
+curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+
+// Récupère les données dans $result
+$result = curl_exec($curl);
+
+// Ferme la session cURL
+curl_close($curl);
+
+// Transforme la données reçue en format JSON 
+$result = json_decode($result);
+
+// Boucle pour récupérer une donnée ciblée
+foreach($result->records as $record){
+    echo '<p>'. $record->fields->Name.'</p>';
+};
+
+// Inclus une balise pre pour formater le visuel
+echo '<pre>';
+var_dump($result);
+echo '</pre>';
+?>
