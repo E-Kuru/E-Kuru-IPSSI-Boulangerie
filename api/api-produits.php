@@ -4,7 +4,7 @@
 $curl = curl_init();
 
 // URL à cibler
-curl_setopt($curl, CURLOPT_URL, 'https://api.airtable.com/v0/appHPGSjJLGYA9Di1/Produits?filterByFormula=SEARCH(%22Patisserie%22%2C+%7BCategorie%7D)');
+curl_setopt($curl, CURLOPT_URL, 'https://api.airtable.com/v0/appHPGSjJLGYA9Di1/Produits?Records&view=Grid%20view');
 
 // Création du Bearer 
 $auth = 'Authorization: Bearer key1nLuwu3ULNJGnA';
