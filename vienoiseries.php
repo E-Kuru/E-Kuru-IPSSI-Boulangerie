@@ -3,7 +3,7 @@
 ?>
     
 <div id="AllItems">
-    <div class="allProducts">
+    <div class="allProducts" id="section-viennoiserie">
         <h2>Nos Vienoiseries</h2>
         <div class="products">
             <?php

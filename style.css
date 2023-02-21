@@ -5,41 +5,60 @@
 }
 
     header{
+        background: linear-gradient(127deg,#ea9999, #c1875f,#f7d060);
         height: 15vh;
         display: flex;
-        border : 4px solid black;
         justify-content: center;
         align-items: center;
     }
-
+    
     header nav{
         display: flex;
         justify-content: space-around;
         align-items: center;
-        width: 20%;
+        width: 40%;
     }
-
+    
     header nav a {
-        color : black;
+        color : white;
         text-decoration: none;
     }
-
-#AllItems{
-    height: 80vh;
-    border : 4px solid pink;
+    
+    header nav a:hover {
+        text-decoration: underline;
+    }
+    
+    #AllItems{
+    background-color: #FEE6D5;
+    height: 85vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .allProducts{
+    border : 2px solid white;
     margin-left: 2%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    width: 50%;
-    height: 100%;
+    width: 70%;
+    height: 80%;
+}
+
+#section-patisserie{
+    background-color: #ea9999;
+    color: white;
+}
+#section-viennoiserie{
+    background-color: #c1875f;
+    color: white;
+}
+
+#section-boisson{
+    background-color: #f7d060;
+    color: white;
 }
 
 .allProducts .products{
@@ -53,5 +72,5 @@
 }
 
 p{
-    color: purple;
+    color: white;
 }
