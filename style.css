@@ -35,7 +35,6 @@ header nav a:hover {
 
 #AllItems {
   background-color: #fee6d5;
-  border: 4px solid black;
   height: 120vh;
   display: flex;
   align-items: center;
