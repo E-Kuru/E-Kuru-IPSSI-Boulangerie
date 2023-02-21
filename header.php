@@ -11,6 +11,9 @@
 
 <body>
     <header>
+        <a href="index.php">
+            <img src="./asset/logo_bakery.png" alt="logo" href="index.php">
+        </a>
         <nav>
             <a href="patisseries.php">Pâtisseries</a>
             <a href="vienoiseries.php">Viennoiseries</a>
