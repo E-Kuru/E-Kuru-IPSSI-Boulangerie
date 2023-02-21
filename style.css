@@ -77,12 +77,9 @@ header nav a:hover {
 .allProducts .products .product-text {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  border: 3px solid black;
-}
-
-p {
-  color: white;
+  justify-content: space-around;
+  font-size: 23px;
+  margin-bottom: 4%;
 }
 
 .container {

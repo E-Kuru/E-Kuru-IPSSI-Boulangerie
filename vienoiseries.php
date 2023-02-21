@@ -4,7 +4,7 @@
     
 <div id="AllItems">
     <div class="allProducts" id="section-viennoiserie">
-        <h2>Nos Vienoiseries</h2>
+        <h2>Nos Viennoiseries</h2>
         <div class="products">
             <div class="product-text">
                 <?php
