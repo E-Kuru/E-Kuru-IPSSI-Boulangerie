@@ -3,9 +3,9 @@
 ?>
     
 <div id="AllItems">
-    <div class="allProducts">
+    <div class="allProducts" id="section-patisserie">
         <h2>Nos Pâtisseries</h2>
-        <div class="products">
+        <div class="products" >
             <?php
                 require './api/produits-patisserie.php'
             ?>
