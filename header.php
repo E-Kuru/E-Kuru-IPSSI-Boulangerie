@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="Style.css">
 </head>
-<body>  
+
+<body>
     <header>
         <nav>
             <a href="patisseries.php">Patisseries</a>
@@ -16,4 +18,5 @@
         </nav>
     </header>
 </body>
+
 </html>
