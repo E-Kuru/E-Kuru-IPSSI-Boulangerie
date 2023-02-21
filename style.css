@@ -1,86 +1,163 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-    header{
-        background: linear-gradient(127deg,#ea9999, #c1875f,#f7d060);
-        height: 15vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    header nav{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 40%;
-    }
-    
-    header nav a {
-        color : white;
-        text-decoration: none;
-    }
-    
-    header nav a:hover {
-        text-decoration: underline;
-    }
-    
-    #AllItems{
-    background-color: #FEE6D5;
-    height: 85vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+body {
+  height: 100vh;
+  width: 100vw;
 }
 
-.allProducts{
-    border : 2px solid white;
-    margin-left: 2%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    width: 70%;
-    height: 80%;
+header {
+  background: linear-gradient(127deg, #ea9999, #c1875f, #f7d060);
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.allProducts img{
-    height: auto;
-    width: 240px;
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 40%;
 }
 
-#section-patisserie{
-    background-color: #ea9999;
-    color: white;
-}
-#section-viennoiserie{
-    background-color: #c1875f;
-    color: white;
+header nav a {
+  color: white;
+  text-decoration: none;
 }
 
-#section-boisson{
-    background-color: #f7d060;
-    color: white;
+header nav a:hover {
+  text-decoration: underline;
 }
 
-.allProducts .products{
-    width: 100%;
-    height: 70%;
-    display: flex;
-    justify-content: space-around;
-    text-align: left;
+#AllItems {
+  background-color: #fee6d5;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.allProducts .products .product-text{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    /* border: 3px solid black; */
+.allProducts {
+  border: 2px solid white;
+  margin-left: 2%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: 70%;
+  height: 80%;
 }
 
-p{
-    color: white;
+.allProducts img {
+  height: auto;
+  width: 240px;
+}
+
+#section-patisserie {
+  background-color: #ea9999;
+  color: white;
+}
+#section-viennoiserie {
+  background-color: #c1875f;
+  color: white;
+}
+
+#section-boisson {
+  background-color: #f7d060;
+  color: white;
+}
+
+.allProducts .products {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+}
+
+.allProducts .products .product-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 3px solid black;
+}
+
+p {
+  color: white;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.patisserie {
+  height: 100%;
+  width: 33.33%;
+  background-color: #ea9999;
+  padding-top: 8%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.viennoiserie {
+  height: 100%;
+  width: 33.33%;
+  background-color: #c1875f;
+  padding-top: 2%;
+}
+.logo img {
+  width: 30%;
+  height: auto;
+  padding-top: 2%;
+}
+
+.content_viennoiserie {
+  padding-top: 34%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.boisson {
+  height: 100%;
+  width: 33.33%;
+  background-color: #f7d060;
+  padding-top: 8%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  height: 200px;
+  width: 200px;
+}
+
+body a {
+  background-color: transparent !important;
+  border-color: transparent;
+  color: white !important;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: "Black Han Sans", sans-serif;
+  font-size: 2rem;
+}
+
+@font-face {
+  font-family: "Black Han Sans";
+  src: url(BlackHanSans-Regular.ttf) format("ttf");
 }
