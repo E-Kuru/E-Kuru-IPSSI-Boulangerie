@@ -6,9 +6,12 @@
     <div class="allProducts" id="section-patisserie">
         <h2>Nos Pâtisseries</h2>
         <div class="products" >
-            <?php
-                require './api/produits-patisserie.php'
-            ?>
+            <div class="product-text">
+                <?php
+                    require './api/produits-patisserie.php'
+                ?>
+            </div>
+            <img src="./asset/cheesecake.png" alt="cheesecake image">
         </div>
     </div>
 </div>
