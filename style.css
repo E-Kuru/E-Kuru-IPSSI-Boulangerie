@@ -13,15 +13,15 @@ header {
 }
 
 header img {
-    width: 80px;
-    height: auto;
+  width: 80px;
+  height: auto;
 }
 
 header nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 40%;
+  width: 80%;
 }
 
 header nav a {
@@ -151,10 +151,161 @@ body a {
   cursor: pointer;
   text-decoration: none;
   font-family: "Black Han Sans", sans-serif;
-  font-size: 2rem;
+  font-size: 16px;
 }
 
 @font-face {
   font-family: "Black Han Sans";
   src: url(BlackHanSans-Regular.ttf) format("ttf");
+}
+
+/* ------------- Form -------------*/
+
+.container-form {
+  padding: 4%;
+  width: 100%;
+  height: 100vh;
+  background-color: #834417;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white !important;
+}
+
+.container-form h1 {
+  margin-bottom: 2%;
+}
+
+form {
+  width: 40%;
+}
+
+.form-group {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+button {
+  align-items: center;
+  background-color: #f7d060;
+  border-radius: 0.25rem;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+  margin-top: 20px;
+  border-radius: 10px;
+  border-color: #f7d060;
+  box-shadow: none;
+  border-style:none;
+}
+
+button i {
+  font-style: normal;
+}
+
+button:hover,
+button:focus {
+  border-color: rgba(255, 255, 255, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+button:hover {
+  transform: translateY(-1px);
+}
+
+button:active {
+  background-color: #f0f0f1;
+  border-color: rgba(255, 255, 255, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgb(150, 100, 18);
+  transform: translateY(0);
+}
+
+.add-product-name {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-product-price {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-product-description {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-product-description input {
+  height: 80px;
+}
+
+.add-product-saveur {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-product-allergen {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-product-quantity {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-category {
+  display: flex;
+  flex-direction: column;
+}
+
+form input {
+  padding:10px;
+  height: 35px;
+  margin-top: 12px;
+  margin-bottom: 8px;
+  border-radius: 10px;
+  border-color: white;
+  box-shadow: none;
+  border-style:none;
+}
+
+form label {
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+}
+
+select {
+  height: 40px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  transition: 0.2s;
+  border-color: white;
+  box-shadow: none;
+  border-style:none;
 }
