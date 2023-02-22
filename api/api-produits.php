@@ -4,7 +4,7 @@
 $curl = curl_init();
 
 // URL à cibler
-curl_setopt($curl, CURLOPT_URL, 'https://api.airtable.com/v0/appHPGSjJLGYA9Di1/Produits?filterByFormula=SEARCH(%22Patisserie%22%2C+%7BCategorie%7D)');
+curl_setopt($curl, CURLOPT_URL, 'https://api.airtable.com/v0/appHPGSjJLGYA9Di1/Produits?Records&view=Grid%20view');
 
 // Création du Bearer 
 $auth = 'Authorization: Bearer key1nLuwu3ULNJGnA';
@@ -25,8 +25,16 @@ $result = json_decode($result);
 
 // Boucle pour récupérer une donnée ciblée
 foreach($result->records as $record){
-    echo '<p>Nom: '. $record->fields->Name." Prix : ".$record->fields->Prix.' €</p>';
+    echo "<form class='modify-form' onsubmit = 'return false' id='$record->id'>
+    <input id='name$record->id' type='text' value="
+    .$record->fields->Name.
+    "><input id='prix$record->id' value="
+    .$record->fields->Prix.'€'.
+    "><input id='description$record->id' type='text-area' value=".$record->fields->Description.">
+    <input id='saveur$record->id' type='text' value=".$record->fields->Saveur.">". 
+    "<button class=editButtons onclick=pathProduct('$record->id') >Save</button>
+    "."<button class=editButtons onclick=deleteProduct('$record->id') >X</button>".
+    "</form>";
 };
-
-// var_dump($result)
 ?>
+<script src="./modify.js"></script>

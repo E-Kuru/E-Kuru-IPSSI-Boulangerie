@@ -13,5 +13,6 @@
             </div>
             <img src="./asset/cheesecake.png" alt="cheesecake image">
         </div>
+        <a href="patch-produits.php"><button class="editButton">Modifier un produit </button></a>
     </div>
 </div>

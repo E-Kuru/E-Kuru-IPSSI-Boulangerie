@@ -13,5 +13,6 @@
             </div>
             <img src="./asset/croissant.png" alt="image croissant">
         </div>
+        <a href="patch-produits.php"><button class="editButton">Modifier un produit </button></a>
     </div>
 </div>
