@@ -25,6 +25,6 @@ $result = json_decode($result);
 
 // Boucle pour récupérer une donnée ciblée
 foreach($result->records as $record){
-    echo '<p>Nom: '. $record->fields->Name."<br> Prix : ".$record->fields->Prix.' €</p><p>Description : '.$record->fields->Description.'<p/> <br>';};
-
+    echo '<p>Nom: '. $record->fields->Name."<br> Prix : ".$record->fields->Prix.' €</p><p>Description : '.$record->fields->Description.'<p/><br>';
+}
 ?>

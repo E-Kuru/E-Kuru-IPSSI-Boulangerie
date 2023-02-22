@@ -24,8 +24,18 @@ curl_close($curl);
 $result = json_decode($result);
 
 // Boucle pour récupérer une donnée ciblée
-foreach ($result->records as $record) {
-    echo '<p>' . $record->fields->Name . ", " . $record->fields->Prix . ' €</p>';
-};
 
-// var_dump($result)
+foreach ($result->records as $record) {
+    echo "<form class='modify-form' onsubmit = 'return false' id='$record->id'>
+    <input id='name$record->id' type='text' value="
+        . $record->fields->Name .
+        "><input id='prix$record->id' value="
+        . $record->fields->Prix . '€' .
+        "><input id='description$record->id' type='text-area' value=" . $record->fields->Description . ">
+    <input id='saveur$record->id' type='text' value=" . $record->fields->Saveur . ">" .
+        "<button class=editButtons onclick=pathProduct('$record->id') >Save</button>
+    " . "<button class=editButtons onclick=deleteProduct('$record->id') >X</button>" .
+        "</form>";
+};
+?>
+<script src="./modify.js"></script>

@@ -48,7 +48,7 @@ header nav a:hover {
   align-items: center;
   flex-direction: column;
   width: 85%;
-  height: 80%;
+  height: 90%;
 }
 
 .allProducts img {
@@ -156,7 +156,7 @@ body a {
 
 @font-face {
   font-family: "Black Han Sans";
-  src: url(BlackHanSans-Regular.ttf) format("ttf");
+  src: url(./asset/Font/BlackHanSans-Regular.ttf) format("ttf");
 }
 
 /* ------------- Form -------------*/
@@ -309,3 +309,43 @@ select {
   box-shadow: none;
   border-style:none;
 }
+
+.editButton{
+  color: white;
+  background-color: black;
+  border : 1px solid white;
+  width: 140px;
+  height: 40px;
+}
+
+.modify-section h2{
+  align-self: center;
+  margin-bottom: 8%;
+}
+
+
+.modify-elements{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 95%;
+  height: 95%;
+  /* border: 2px solid black; */
+}
+
+.modify-form{
+  height : 15%;
+}
+.modify-form input{
+  height: 90%;
+}
+
+.editButtons{
+  color: white;
+  background-color: black;
+  border : 1px solid white;
+  width: 80px;
+  height: 30px;
+}
+
