@@ -21,6 +21,7 @@
             <a href="form.php">Ajouter des produits</a>
         </nav>
     </header>
+    <script src="./api/post.js"></script>
 </body>
 
 </html>
