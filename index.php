@@ -29,7 +29,7 @@
             <a href="boissons.php">Boissons</a>
         </div>
     </div>
-    <script src="./api/post.js"></script>
+    
 </body>
 
 </html>

@@ -172,11 +172,11 @@ body a {
   color: white !important;
 }
 
-.container-form h1 {
+.container-form h2 {
   margin-bottom: 2%;
 }
 
-form {
+.form-add {
   width: 40%;
 }
 
@@ -187,7 +187,7 @@ form {
   justify-content: space-between;
 }
 
-button {
+.add-product-button {
   align-items: center;
   background-color: #f7d060;
   border-radius: 0.25rem;
@@ -280,7 +280,7 @@ button:active {
   flex-direction: column;
 }
 
-form input {
+.form-add input {
   padding:10px;
   height: 35px;
   margin-top: 12px;
@@ -291,12 +291,12 @@ form input {
   border-style:none;
 }
 
-form label {
+.form-add label {
   font-size: 1.2rem;
   font-family: "Poppins", sans-serif;
 }
 
-select {
+.form-add select {
   height: 40px;
   margin-top: 15px;
   margin-bottom: 10px;

@@ -3,9 +3,8 @@ require 'header.php';
 ?>
 
 <div class="container-form">
-  <h1>Ajouter un produits</h1>
-
-  <form>
+  <h2>Ajouter un produits</h1>
+    <form class="form-add">
     <div class="form-group">
       <div class=" add-product-name">
         <label for="name" class="form-label">Nom du produit</label>
@@ -34,23 +33,23 @@ require 'header.php';
 
       <div class="add-product-quantity">
         <label for="quantity" class="form-label">Stock</label>
-        <input class="add-product-quantity" type="text" placeholder="" id="quantite">
+        <input class="add-product-quantity" type="text" placeholder="" id="quantity">
       </div>
 
       <div class="add-category">
         <label for="categories" class="form-label">Categorie</label>
         <select class="select-category" id="categories" name="categories" data-form-type="categories" id="category">
-          <option>Choisir</option>
-          <option>Pâtisseries</option>
-          <option>Viennoiseries</option>
-          <option>Boissons</option>
+          <option value="recmhCaeXEzRJsf5w">Choisir</option>
+          <option value="recmhCaeXEzRJsf5w">Pâtisseries</option>
+          <option value="recmhCaeXEzRJsf5w">Viennoiseries</option>
+          <option value="recmhCaeXEzRJsf5w">Boissons</option>
         </select>
       </div>
 
-      <button class="add-product-button" type="submit" onclick="getValue();">
+      <button class="add-product-button">
         <i class="add">AJOUTER</i>
       </button>
+      </form>
 
     </div>
-  </form>
 </div>

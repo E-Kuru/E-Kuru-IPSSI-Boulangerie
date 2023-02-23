@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boulangerie</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 
 <body>
@@ -21,7 +22,7 @@
             <a href="form.php">Ajouter des produits</a>
         </nav>
     </header>
-    <script src="./api/post.js"></script>
-</body>
+    <script src="./api/post.js" async></script>
+    </body>
 
 </html>
