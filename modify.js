@@ -1,27 +1,17 @@
-const deleteProduct = (id) => {
-
-}
-
-//     form.addEventListener('submit', (e) => {
-//         e.preventDefault()
-//           const formData = new FormData(form)
-//         for (const pair of formData.entries()) {
-//             pair.forEach(e => {
-//                 console.log(e);
-//             })
-//   }
-//     })
-
-// const form = document.querySelector('form')
-// form.addEventListener('submit', (e) => {
-//   e.preventDefault()
-//   const formData = new FormData(form)
-//   for (const pair of formData.entries()) {
-//     console.log(pair)
-//   }
-// })
-
 const Key = "key1nLuwu3ULNJGnA"
+const deleteProduct = (id) => {
+    
+        fetch(`https://api.airtable.com/v0/appHPGSjJLGYA9Di1/Produits?&api_key=${Key}&records[]=${id}`,{
+            method : "DELETE",
+            headers : {"Content-Type" : "application/json"},
+        })
+        .then((res) => {
+            console.log(res);
+        }) .catch((err) => {
+            console.log("Error", err);
+        })
+    location.reload()
+}
 
 const pathProduct = (id) => {
 
@@ -57,5 +47,5 @@ const pathProduct = (id) => {
     .catch((err) => {
         console.log("Error", err.message);
     })
-    // location.reload()
+    location.reload()
 }
