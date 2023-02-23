@@ -30,8 +30,8 @@ const init = () => {
                     Name: "Patisserie",
                     Description: [
                         "rec8116cdd76088af",
-                        "rec245db9343f55e8",
-                        "rec4f3bade67ff565",
+                        "recPAUIfyxcIvX73f",
+                        "reczM35rTHqPQueAy",
                     ],
                     Menus: ["recg9wYFqSkWfyRR7"],
                 },
@@ -40,7 +40,7 @@ const init = () => {
     };
 
     const getCategory = () => {
-        const idCategory = ocument.querySelector("form").elements;
+        const idCategory = document.querySelector("form").elements;
 
         let dataCategory = {
             records: [
